@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;900&display=swap');
+
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fffaf1;
+}
+
+.scritta {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #ff7800;
+}
+
+.menu,
+a,
+button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 14;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #ffff;
+    font-size: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.menu li a {
+    transition: all .3s ease;
+}
+
+.menu a:hover {
+    color: #0b0bd6;
+}
+
+button {
+    padding: 9px 25px;
+    background: #0d0085;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0b0bd6;
+    color: white;
+}
+
+.titolone {
+    font-size: 80px;
+    font-weight: 900;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 20%;
+    text-shadow: 0 4px 2px  rgba(0,0,0,.2);
+}
