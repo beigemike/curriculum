@@ -39,7 +39,7 @@ body {
     background-color: #fffaf1;
 }
 
-.scritta {
+.scritta a {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
     font-size: 30px;

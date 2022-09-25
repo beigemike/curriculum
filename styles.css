@@ -1,0 +1,165 @@
+/** qui importo i miei font da google font per evitare di usare quell'obbrobrio di arial.**/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;900&display=swap');
+
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../images/background.png) center center;       /** e centriamolo va **/
+    background-size: cover;                                        /** riempiamo bene gli spazi **/
+}
+
+.scritta a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #ff7800;
+}
+
+.menu,
+a,
+button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 14;
+    text-decoration: none;       /** cosi diventa qualcosa di meglio di una semplice scritta linkata **/
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #ffff;
+    font-size: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);    /** per dargli un effetto piu carino perche non mettergli un'ombra? **/
+    position: -webkit-sticky;                    /** questo per consentire alla barra di navigazione a rimanere fissa in alto alla pagina. **/
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.menu li a {
+    transition: all .3s ease;
+}
+
+.menu a:hover {
+    color: #0b0bd6;        /** quando il puntatore ci va sopra la scritta cambia colore **/
+}
+
+button {
+    padding: 9px 25px;
+    background: #0d0085;
+    color: white;
+    border: none;
+    border-radius: 20px;         /** i bottoni squadrati sono roba passata. **/
+    cursor: pointer;             /** il puntatore del mouse passa da freccia a ditino **/
+    transition: all .3s ease;    /** la transizione dal colore base al colore in hover diventa piu appetibile **/
+    font-size: 20px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0b0bd6;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.titolone {
+    font-size: 80px;
+    font-weight: 900;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);            /** sto macello servirebbe a centrarmi H e V la scritta. non so se si puo fare con flexbox. **/
+    transform: translateY(-50%);
+    margin-left: 20%;
+    text-shadow: 0 4px 2px  rgba(0,0,0,.2);
+}
+
+img {
+    border-radius: 50%;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sezione {                                              /** qui inizia la magia per creare un effetto "vetro opaco" alla box del testo **/
+    width: 70%;                                         /** preferisco dare le percentuali che i px**/
+    height: 70%;
+    background-color: rgba(255, 255, 255, .1);        /** il .1 sta per l'opacita del colore**/
+    backdrop-filter: blur(10px);                   /** questo applica alla mia box un filtro di blur di cui posso regolarne l'intensita in px **/
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .1);        /** perche non mettergli anche l'ombra?!? **/
+    border: 1px solid rgba(255, 255, 255, .5);        
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);      /** per dare l'effetto di riflessi sul bordo del "vetro"**/
+    border-radius: 10px;                                     /** arrotondiamo... **/
+    text-align: center;
+    padding: 40px;                                           /** prendiamo gli spazi **/
+}
+
+.titparag {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.corpoparag {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    padding: 40px;
+}
