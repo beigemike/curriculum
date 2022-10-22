@@ -38,7 +38,7 @@ body {
 }
 
 body {
-    background: url(./images/background.png) center center;       /** e centriamolo va **/
+    background: url(../images/background.png) center center;       /** e centriamolo va **/
     background-size: cover;                                        /** riempiamo bene gli spazi **/
 }
 
@@ -132,7 +132,7 @@ button:hover {
     color: black;
     margin: 0;
     position: absolute;
-    top: 67%;
+    top: 65%;
     -ms-transform: translateY(-50%);            /** sto macello servirebbe a centrarmi H e V la scritta. non so se si puo fare con flexbox. **/
     transform: translateY(-50%);
     margin-left: 20%;
@@ -159,23 +159,21 @@ button:hover {
     background-color: #d3d3f2;
 }
 
+img {
+    border-radius: 50%;
+    align-items: center;
+}
+
 section {
     width: 100%;
     height: 100vh;
-    margin-top: 245px;
+    margin-top: 93px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section1 {
-    width: 100%;
-    height: 100vh;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .sezione {                                              /** qui inizia la magia per creare un effetto "vetro opaco" alla box del testo **/
     height: fit-content; 
@@ -233,9 +231,8 @@ section1 {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border:1px solid black;
     padding: 10px;
     font-size: 19px;
     text-align: center;
-}
-
+  }
